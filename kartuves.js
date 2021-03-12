@@ -4,24 +4,26 @@ let mistakes = document.getElementById("mistakes")
 let wordUnknownYet = document.getElementById("wordUnknownYet")
 let unknownYetLetter = document.getElementsByClassName("unknownYetLetter")
 let letter = document.getElementsByClassName("letter")
+let result = document.getElementById("result")
 
 startGameButton.addEventListener("click", startGameFun)
+result.addEventListener("click", restartFun)
 
-let setWord =""
-let setWordArr=[]
+let setWord = ""
+let setWordArr = []
 let mistakeCounter = 0
-let indexOfGuessed=[]
+let indexOfGuessed = []
+let lettersNotAnswered = 0
 
-function startGameFun(){
+function startGameFun() {
 
     startGameButton.removeEventListener("click", startGameFun)
 
     setWord = secretWord.value.toUpperCase()
     console.log(setWord)
-    setWordArr=setWord.split()
-    console.log(setWordArr)
+    setWordArr = setWord.split()
     for (let i = 0; i < setWord.length; i++) {
-        wordUnknownYet.innerHTML+=`
+        wordUnknownYet.innerHTML += `
         <div id="i" class="unknownYetLetter">_</div>
         `
     }
@@ -29,34 +31,54 @@ function startGameFun(){
         letter[i].addEventListener("click", checkLetterFun)
     }
 }
-function checkLetterFun(event){
-    console.log(event.target.innerText)
+
+function checkLetterFun(event) {
     event.target.removeEventListener("click", checkLetterFun)
-    let letterGuessed =""
+    let letterGuessed = ""
 
-    if(setWord.includes(event.target.innerText)){
+    if (setWord.includes(event.target.innerText)) {
         letterGuessed = event.target.innerText
-
-        console.log(event.target.innerText)
         event.target.style.backgroundColor = "green"
 
-
         for (let i = 0; i < setWord.length; i++) {
-            if(setWord[i]===letterGuessed){
-               indexOfGuessed.push(i)
+            if (setWord[i] === letterGuessed) {
+                indexOfGuessed.push(i)
             }
         }
     } else {
         console.log("ner tokios")
         event.target.style.backgroundColor = "red"
-        mistakeCounter+= 1
+        mistakeCounter += 1
         mistakes.innerText = mistakeCounter
     }
-    console.log(indexOfGuessed)
-    for (let i = 0; i <indexOfGuessed.length ; i++) {
+    for (let i = 0; i < indexOfGuessed.length; i++) {
         unknownYetLetter[indexOfGuessed[i]].innerText = event.target.innerText
     }
-    indexOfGuessed=[]
-// checkIfWinOrLose()
+    indexOfGuessed = []
+    checkIfWinOrLose()
 
+}
+
+function checkIfWinOrLose() {
+
+    if (mistakeCounter > 8) {
+        result.style.display = "flex"
+        result.innerText = "!!! YOU LOSE !!!"
+    }
+    for (i = 0; i < setWord.length; i++) {
+        if (unknownYetLetter[i].innerText.includes("_")) {
+            lettersNotAnswered += 1
+        }
+    }
+
+    if (lettersNotAnswered === 0) {
+        result.style.display = "flex"
+        result.innerText = "!!! YOU WIN !!!"
+    }
+    lettersNotAnswered = 0
+
+}
+
+function restartFun() {
+    window.location.href = "./kartuves.html"
 }
