@@ -38,7 +38,7 @@ function checkLetterFun(event) {
 
     if (setWord.includes(event.target.innerText)) {
         letterGuessed = event.target.innerText
-        event.target.style.backgroundColor = "green"
+        event.target.style.backgroundColor = "#457919"
 
         for (let i = 0; i < setWord.length; i++) {
             if (setWord[i] === letterGuessed) {
@@ -47,7 +47,7 @@ function checkLetterFun(event) {
         }
     } else {
         console.log("ner tokios")
-        event.target.style.backgroundColor = "red"
+        event.target.style.backgroundColor = "#960f0b"
         mistakeCounter += 1
         mistakes.innerText = mistakeCounter
     }
