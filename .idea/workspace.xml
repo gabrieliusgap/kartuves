@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77240f7f-6d60-4a15-9c19-a3155562693f" name="Default Changelist" comment="" />
+    <list default="true" id="77240f7f-6d60-4a15-9c19-a3155562693f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kartuves.css" beforeDir="false" afterPath="$PROJECT_DIR$/kartuves.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kartuves.html" beforeDir="false" afterPath="$PROJECT_DIR$/kartuves.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled/testIndex.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -40,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615550153038</updated>
-      <workItem from="1615550154306" duration="302000" />
+      <workItem from="1615550154306" duration="3756000" />
     </task>
     <servers />
   </component>
