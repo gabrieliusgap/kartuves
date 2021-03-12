@@ -14,17 +14,14 @@
 .inputHolder{
     background-color: #4c646e;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
-}
-.inputHolder form{
     padding: 20px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
 }
+
 .inputHolder input{
     padding: 10px;
     margin: 10px;

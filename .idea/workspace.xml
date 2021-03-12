@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kartuves.css" beforeDir="false" afterPath="$PROJECT_DIR$/kartuves.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kartuves.html" beforeDir="false" afterPath="$PROJECT_DIR$/kartuves.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kartuves.js" beforeDir="false" afterPath="$PROJECT_DIR$/kartuves.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615550153038</updated>
-      <workItem from="1615550154306" duration="5042000" />
+      <workItem from="1615550154306" duration="8256000" />
     </task>
     <servers />
   </component>
