@@ -4,7 +4,7 @@
 <script src="kartuves.js" defer></script>
 
 <head>
-    <title>hang man game</title>
+    <title>Hang Man Game</title>
 </head>
 <body>
 
@@ -13,26 +13,52 @@
 </div>
 <div class="inputHolder">
     <form>
-        <label for="secretWord">Enter Word:</label>
+        <label for="secretWord">Enter One Word In English Alphabet Only:</label>
         <br>
         <input type="password" id="secretWord" placeholder="Enter a Word to Play">
         <br>
-        <button id="startGame">Start Game</button>
+        <button id="startGameButton">Start Game</button>
 
 
     </form>
 </div>
-<div class="wordUnknownYet">
-    <div id="1" class="unknownYetLetter">A</div>
-    <div id="2" class="unknownYetLetter">B</div>
-    <div id="3" class="unknownYetLetter">C</div>
-    <div id="4" class="unknownYetLetter">D</div>
-    <div id="5" class="unknownYetLetter">E</div>
-    <div id="6" class="unknownYetLetter">F</div>
+<div id="wordUnknownYet" class="wordUnknownYet">
+
 </div>
-<div class="hangingimageHolder"></div>
+<div class="hangingImageHolder">
+    <div class="mistakes">Mistakes (9 possible): <span id="mistakes">0</span></div>
+</div>
 <div class="alphabetHolder">
-    <div id="alphabet"></div>
+    <div id="alphabet">
+        <div class="letter">A</div>
+        <div class="letter">B</div>
+        <div class="letter">C</div>
+        <div class="letter">D</div>
+        <div class="letter">E</div>
+        <div class="letter">F</div>
+        <div class="letter">G</div>
+        <div class="letter">H</div>
+        <div class="letter">I</div>
+        <div class="letter">J</div>
+        <div class="letter">K</div>
+        <div class="letter">L</div>
+        <div class="letter">M</div>
+        <div class="letter">N</div>
+        <div class="letter">O</div>
+        <div class="letter">P</div>
+        <div class="letter">Q</div>
+        <div class="letter">R</div>
+        <div class="letter">S</div>
+        <div class="letter">T</div>
+        <div class="letter">U</div>
+        <div class="letter">W</div>
+        <div class="letter">X</div>
+        <div class="letter">Y</div>
+        <div class="letter">Z</div>
+
+
+
+    </div>
 </div>
 
 

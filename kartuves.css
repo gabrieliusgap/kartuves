@@ -41,12 +41,19 @@
     border-radius: 5px;
 
 }
+.inputHolder button:hover{
+    background-color: #92bce9;
+    transform: scale(1.05);
+
+}
 .wordUnknownYet{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    text-align: center;
     background-color: #6e6f72;
+    padding: 20px;
 }
 .unknownYetLetter{
     width: 50px;
@@ -59,4 +66,45 @@
     color: #4f0e4f;
     border: #4f0e4f 2px solid;
     margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.hangingImageHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #8d8b8b;
+}
+.alphabetHolder{
+    background-color: #797878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20vw;
+}
+#alphabet{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.letter{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: #4f0e4f;
+    border: #4f0e4f 2px solid;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.letter:hover{
+    transform: scale(1.05);
+
 }
